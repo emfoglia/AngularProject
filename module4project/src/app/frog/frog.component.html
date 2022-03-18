@@ -1,0 +1,15 @@
+<div style="text-align: center">
+    <br>
+    <p>Are you sure?</p>
+    <button (click) = "displayNext()">Yes</button>
+    <div *ngIf="isVisibleBtn">
+        <br>
+        <p>Are you REALLY sure?</p>
+        <button (click) = "displayImage()">YES!</button>
+    </div>
+    <div *ngIf="isVisiblePic">
+        <br>
+        <img style = "width: 50%;" [src] = "image" title = "frog">
+        <h2>The mystery is a smiling frog!</h2>
+    </div>
+</div>
